@@ -11,14 +11,17 @@ def resource_path(relative_path):
 
 input_file = sys.argv[1]
 output_file = sys.argv[2]
-
+if not os.path.isfile(input_file):
+    print(f"❌ Error: Input file does not exist: {input_file}")
+    sys.exit(1)
 
 path_obj = Path(input_file).resolve()
 print("Windows path:", path_obj)
 file_url = path_obj.parent.as_uri() #get the directory of the html file for baseUrl
-print("File URL:", file_url)
+print("File directory URL:", file_url)
 
-
+output_path = Path(output_file)
+output_path.parent.mkdir(parents=True, exist_ok=True) #create out directory if not exists
 
 
 wkhtmltopdf_path = resource_path("bin/wkhtmltopdf.exe")
