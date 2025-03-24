@@ -1,6 +1,13 @@
 # install
 
+tested on Python 3.8.0
+
+    python -m venv .
     pip install -r requirements.txt
+
+# run script
+
+    python script.py templates/v1/input.html pdf/out.pdf
 
 ## create exe
 
