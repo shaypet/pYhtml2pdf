@@ -1,0 +1,31 @@
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 2em;
+  margin: 0;
+}
+
+.logo {
+  content: url("pic.jpg");
+}
+
+.container {
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #0055a5;
+  margin-bottom: 0.5em;
+}
+
+p {
+  line-height: 1.6;
+}

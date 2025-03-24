@@ -1,0 +1,8 @@
+.vscode/
+build/
+dist/
+include/
+Lib/
+Scripts/
+pyvenv.cfg
+script.spec
